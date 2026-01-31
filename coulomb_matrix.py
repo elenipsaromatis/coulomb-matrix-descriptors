@@ -57,7 +57,7 @@ class Molecule:
 
     def eigenCM_distance(self, other):
         """Computes the Euclidean distance between the eigenvalues of this molecule and another molecule"""
-        # Create if loops for the different sized matrices
+        # Create if condition for different sized matrices
         if self.natoms != other.natoms:
             if self.natoms < other.natoms:
                 smaller = self
