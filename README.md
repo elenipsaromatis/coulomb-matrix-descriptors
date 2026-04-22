@@ -1,3 +1,9 @@
+![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.11-3776AB)
+![NumPy](https://img.shields.io/badge/numpy-supported-013243)
+![Imperial](https://img.shields.io/badge/Imperial%20College%20London-MSc-0000CD)
+
+
 # coulomb-matrix-descriptors
 This repository implements Coulomb matrix–based molecular descriptors derived from XYZ molecular geometries. The code focuses on constructing molecular representations and handling permutation dependence, without performing any supervised machine-learning training.
  
@@ -8,6 +14,16 @@ This repository implements a small molecular representation module that converts
 
 - **Eigenvalue descriptor**: a vector obtained from the eigenvalues of the Coulomb matrix.
 - **Sorted Coulomb matrix**: the Coulomb matrix reordered by descending row norms.
+
+
+## Installation
+Clone the repository and install dependencies:
+
+```
+git clone https://github.com/elenipsaromatis/coulomb-matrix-descriptors.git
+cd coulomb-matrix-descriptors
+pip install numpy
+```
 
 
 ## Methodology
@@ -44,9 +60,8 @@ This repository includes example molecular structure files in XYZ format, which 
 - `H2S.xyz` – Hydrogen sulfide  
 - `pentane.xyz` – Pentane  
 
-Atomic numbers are mapped from element symbols using this file:
-
-- `atomic_number.py` – Utility for converting element symbols to nuclear charges
-
+## Code
+- `atomic_number.py` - maps element symbols to nuclear charges
+- `coulomb_matrix.py` - constructs Coulomb matrix descriptors
 
 Developed in the context of the MSc Digital Chemistry program at Imperial College London.
